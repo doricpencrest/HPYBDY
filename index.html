@@ -1,24 +1,29 @@
-html, body {
-    margin: 0;
-    height: 100%;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HPYBDY</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="hpybdy.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://play.rosebud.ai/assets/naomi%20instruments10952%20triangle2.jpg?Au8h');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-body {
-    background-image: url('./assets/naomi%20instruments10952%20triangle2.jpg?Au8h');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Optional: temporarily comment this out if layout issues occur */
-    /* transform: scale(0.8); */
-    /* transform-origin: center center; */
-}
-
-#renderDiv {
-    width: 700px;
-    height: 500px;
-}
+        #renderDiv {
+            width: 700px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="renderDiv"></div>
+</body>
+</html>
