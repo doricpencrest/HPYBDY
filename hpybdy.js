@@ -283,4 +283,14 @@ if (audioContext.state === 'suspended') {
     };
     document.addEventListener('click', removeSuspendMsgHandler, { once: true });
     document.addEventListener('keydown', removeSuspendMsgHandler, { once: true });
+    // === Scale down the Phaser canvas to 80% of its size ===
+window.addEventListener('load', () => {
+    const canvas = document.querySelector('canvas');
+    if (canvas) {
+        canvas.style.transform = 'scale(0.8)';
+        canvas.style.transformOrigin = 'top left';
+    } else {
+        console.warn("Canvas not found to scale.");
+    }
+});
 }
