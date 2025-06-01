@@ -273,16 +273,6 @@ if (audioContext.state === 'suspended') {
     suspendMsg.style.zIndex = '1000'; // High z-index to be visible
     suspendMsg.style.textAlign = 'center';
     document.body.appendChild(suspendMsg);
-    // Remove the message after the first user interaction
-    const removeSuspendMsgHandler = () => {
-        if (suspendMsg.parentNode) {
-            suspendMsg.remove();
-        }
-        document.removeEventListener('click', removeSuspendMsgHandler);
-        document.removeEventListener('keydown', removeSuspendMsgHandler);
-    };
-    document.addEventListener('click', removeSuspendMsgHandler, { once: true });
-    document.addEventListener('keydown', removeSuspendMsgHandler, { once: true });
     // === Scale down the Phaser canvas to 80% of its size ===
 window.addEventListener('load', () => {
     const canvas = document.querySelector('canvas');
@@ -293,4 +283,15 @@ window.addEventListener('load', () => {
         console.warn("Canvas not found to scale.");
     }
 });
+    // Remove the message after the first user interaction
+    const removeSuspendMsgHandler = () => {
+        if (suspendMsg.parentNode) {
+            suspendMsg.remove();
+        }
+        document.removeEventListener('click', removeSuspendMsgHandler);
+        document.removeEventListener('keydown', removeSuspendMsgHandler);
+    };
+    document.addEventListener('click', removeSuspendMsgHandler, { once: true });
+    document.addEventListener('keydown', removeSuspendMsgHandler, { once: true });
+    
 }
