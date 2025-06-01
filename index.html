@@ -1,43 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <title>Interactive Audio Player</title>
-    <script type="importmap">
-    {
-        "imports": {
-            "main": "./hpybdy.js"
-        }
-    }
-    </script>
+    <title>HPYBDYe</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="hpybdy.js"></script>
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('./assets/naomi instruments10952 triangle2.jpg?Au8h');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            cursor: pointer;
-            /* 
-                The image-rendering properties below were for pixel art.
-                For a photographic background, they might not be ideal or necessary.
-                Let's remove them to use the browser's default (usually smoother) rendering.
-            */
-            /* image-rendering: -webkit-optimize-contrast; */ /* For Chrome/Safari */
-            /* image-rendering: crisp-edges; */ /* For Firefox */
-        }
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 90vh; }
+        #renderDiv { width: 600px; height: 400px; }
     </style>
 </head>
 <body>
-    <!-- All content within body, except the script tag, is removed -->
-    <script type="module" src="main.js"></script>
+    <div id="renderDiv"></div>
 </body>
-</html>
+</html>not
