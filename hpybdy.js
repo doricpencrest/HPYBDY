@@ -256,6 +256,8 @@ function restartGame() {
 // This logic relied on the #container element, which is now removed.
 // We'll create a temporary message on the body if audio is suspended.
 createRestartButton(); // Initialize the restart button
+document.body.style.transform = "scale(0.8)";
+document.body.style.transformOrigin = "top left";
 if (audioContext.state === 'suspended') {
     const suspendMsg = document.createElement('div');
     suspendMsg.textContent = 'Audio is suspended. Click or press a key to activate.';
