@@ -2,7 +2,7 @@ console.log("Interactive Audio Player script loaded.");
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const audioBuffersCache = {}; // Cache for decoded audio buffers
-const audioAssetBaseUrl = 'https://play.rosebud.ai/assets/';
+const audioAssetBaseUrl = 'https:/assets/';
 const audioAssetMap = {
     1: `${audioAssetBaseUrl}1.wav?pZQt`, // Updated to valid asset as per list
     2: `${audioAssetBaseUrl}2.wav?aNWz`,
