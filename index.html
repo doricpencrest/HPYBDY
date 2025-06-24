@@ -4,40 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Audio Player</title>
-    <script type="importmap">
-    {
-        "imports": {
-            "main": "./hpybdy.js"
-        }
-    }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('https://play.rosebud.ai/assets/naomi instruments10952 triangle2.jpg?Au8h');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            cursor: pointer;
-            /* 
-                The image-rendering properties below were for pixel art.
-                For a photographic background, they might not be ideal or necessary.
-                Let's remove them to use the browser's default (usually smoother) rendering.
-            */
-            /* image-rendering: -webkit-optimize-contrast; */ /* For Chrome/Safari */
-            /* image-rendering: crisp-edges; */ /* For Firefox */
+            min-height: 100vh;
+            background-color: #F5E6D3;
+        }
+        #renderDiv {
+            width: 800px;
+            height: 600px;
         }
     </style>
 </head>
 <body>
-    <!-- All content within body, except the script tag, is removed -->
-    <script type="module" src="hpybdy.js"></script>
+    <div id="renderDiv"></div>
+    <script src="hpybdy.js"></script>
 </body>
 </html>
