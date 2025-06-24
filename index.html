@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Audio Player</title>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #F5E6D3;
-        }
-        #renderDiv {
-            width: 800px;
-            height: 600px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Audio Player</title>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url('naomi instruments10952 triangle2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: sans-serif;
+    }
+
+    #renderDiv {
+      width: 800px;
+      height: 600px;
+      background-color: rgba(255, 255, 255, 0.8); /* optional: gives contrast if needed */
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div id="renderDiv"></div>
-    <script src="hpybdy.js"></script>
+  <div id="renderDiv"></div>
+  <script src="hpybdy.js"></script>
 </body>
 </html>
