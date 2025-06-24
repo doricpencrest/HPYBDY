@@ -2,7 +2,7 @@ console.log("Interactive Audio Player script loaded.");
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const audioBuffersCache = {}; // Cache for decoded audio buffers
-const audioAssetBaseUrl = './assets/';
+const audioAssetBaseUrl = 'https://play.rosebud.ai/assets/';
 const audioAssetMap = {
     1: `${audioAssetBaseUrl}1.wav?pZQt`, // Updated to valid asset as per list
     2: `${audioAssetBaseUrl}2.wav?aNWz`,
@@ -13,8 +13,8 @@ const audioAssetMap = {
     7: `${audioAssetBaseUrl}7.wav?UfIX`,
     8: `${audioAssetBaseUrl}8.wav?ve7E`,
 };
-const WHATSAPP_IMG_URL_INITIAL = './assets/WhatsApp Image 2025-06-01 at 18.24.48.jpeg?w9B8';
-const WHATSAPP_IMG_URL_ALTERNATE = './assets/WhatsApp Image 2025-06-01 at 18.28.36.jpeg?ABbj';
+const WHATSAPP_IMG_URL_INITIAL = 'https://play.rosebud.ai/assets/WhatsApp Image 2025-06-01 at 18.24.48.jpeg?w9B8';
+const WHATSAPP_IMG_URL_ALTERNATE = 'https://play.rosebud.ai/assets/WhatsApp Image 2025-06-01 at 18.28.36.jpeg?ABbj';
 let audioPlayCount = 0;
 let currentWhatsappImageUrl = WHATSAPP_IMG_URL_INITIAL; // Will be used by showRandomWhatsappImage for the initial image
 const WHATSAPP_IMG_DISPLAY_WIDTH = 300; // px (Increased from 200 to 300, a 50% increase)
