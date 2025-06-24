@@ -13,8 +13,8 @@ const audioAssetMap = {
     7: `${audioAssetBaseUrl}7.wav?UfIX`,
     8: `${audioAssetBaseUrl}8.wav?ve7E`,
 };
-const WHATSAPP_IMG_URL_INITIAL = 'https://play.rosebud.ai/assets/WhatsApp Image 2025-06-01 at 18.24.48.jpeg?w9B8';
-const WHATSAPP_IMG_URL_ALTERNATE = 'https://play.rosebud.ai/assets/WhatsApp Image 2025-06-01 at 18.28.36.jpeg?ABbj';
+const WHATSAPP_IMG_URL_INITIAL = 'https:/assets/WhatsApp Image 2025-06-01 at 18.24.48.jpeg?w9B8';
+const WHATSAPP_IMG_URL_ALTERNATE = 'https:/assets/WhatsApp Image 2025-06-01 at 18.28.36.jpeg?ABbj';
 let audioPlayCount = 0;
 let currentWhatsappImageUrl = WHATSAPP_IMG_URL_INITIAL; // Will be used by showRandomWhatsappImage for the initial image
 const WHATSAPP_IMG_DISPLAY_WIDTH = 300; // px (Increased from 200 to 300, a 50% increase)
