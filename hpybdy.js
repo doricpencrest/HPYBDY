@@ -1,16 +1,43 @@
-console.log("hpybdy.js loaded");  // Just to check your file is loading!
-
-const config = {
-    type: Phaser.AUTO,      // Phaser picks WebGL or Canvas automatically
-    width: 700,             // Width of the game
-    height: 500,            // Height of the game
-    parent: 'renderDiv',    // Tell Phaser to put the game inside this div
-    scene: {
-        create: function() {
-            // This runs when the game starts. Let's add some text to check
-            this.add.text(100, 100, 'Hello Phaser!', { fontSize: '32px', fill: '#fff' });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Audio Player</title>
+    <script type="importmap">
+    {
+        "imports": {
+            "main": "./main.js"
         }
     }
-};
-
-const game = new Phaser.Game(config);
+    </script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://play.rosebud.ai/assets/naomi instruments10952 triangle2.jpg?Au8h');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            cursor: pointer;
+            /* 
+                The image-rendering properties below were for pixel art.
+                For a photographic background, they might not be ideal or necessary.
+                Let's remove them to use the browser's default (usually smoother) rendering.
+            */
+            /* image-rendering: -webkit-optimize-contrast; */ /* For Chrome/Safari */
+            /* image-rendering: crisp-edges; */ /* For Firefox */
+        }
+    </style>
+</head>
+<body>
+    <!-- All content within body, except the script tag, is removed -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
